@@ -1,0 +1,294 @@
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            height: 100dvh;
+            overflow-y: scroll;
+        }
+
+        .sdfc-header {
+            height: calc(100dvh - 70dvh);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sdfc-header .logo {
+            flex: auto;
+            display: flex;
+        }
+
+        .sdfc-header .logo div {
+            display: flex;
+            flex: 1;
+
+        }
+
+        .brand-logo {
+            display: flex;
+            max-width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            /* background-color: #0c5c62; */
+            border: 2px solid rgba(128, 128, 128, 0.142);
+            overflow: hidden;
+            box-shadow: 5px 5px 10px #04525888;
+        }
+
+        .brand-logo img {
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            justify-content: flex-end;
+            padding: 0 1em;
+            align-items: center;
+        }
+
+        .right {
+            gap: 10px;
+            padding: 0 1em;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .right>h1 {
+            width: fit-content;
+            padding: 0 2.4em;
+        }
+
+        .right>h2 {
+            width: fit-content;
+        }
+
+        .app-body {
+            min-height: calc(100dvh - 30dvh);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-bar {
+            min-height: 65px;
+            background-color: #045258;
+        }
+
+
+        .nav-bar ul {
+            position: sticky;
+            top: 0;
+            margin: auto;
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            border: 2px solid #0c5c62;
+            background-color: #ffffff17;
+            height: 100%;
+            width: 85%;
+            gap: 0 1em;
+            border-radius: 6px;
+            padding: 10px 12px;
+
+        }
+
+        .nav-bar ul li {
+            display: grid;
+            place-items: center;
+            flex: 1;
+            background-color: #0accde;
+            border-radius: 6px;
+            box-shadow: rgba(4, 4, 5, 0.475) 0px 8px 24px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            font-size: larger;
+            color: white;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .nav-bar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .sdfc-body {
+            display: flex;
+            height: 100%;
+
+        }
+
+        .sdfc-body>div {
+            height: 100%;
+        }
+
+        .sdfc-body .adds {
+            flex: 0.25;
+        }
+
+        .sdfc-body .form {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .form h1 {
+            text-align: center;
+        }
+
+        .sdfc-body .form table {
+            border: 2px solid rgb(206, 184, 143);
+            background-color: white;
+            border-radius: 8px;
+            margin: auto;
+            background-color: wheat;
+            color: rgb(37, 36, 36);
+            border-spacing: 30px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        .form table tr {
+            margin: 1em;
+
+
+        }
+
+        .form input {
+            -webkit-appearance: none;
+
+            font-size: 1.2em;
+            border: none;
+            border: 1px solid gray;
+            padding: 6px 8px;
+            border-radius: 5px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .submit-btn {
+            text-align: center;
+        }
+
+        .submit-btn input {
+            border-radius: 6px;
+            border: none;
+            padding: 8px 10px;
+            background-color: rgb(47, 139, 47);
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 1.4em;
+            transition: all .2s linear;
+        }
+
+        .submit-btn input:hover {
+            box-shadow: 0 0px 20px green;
+        }
+
+        footer {
+            background-color: #212121;
+            padding: 2em 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="app">
+        <header class="sdfc-header">
+            <div class="logo">
+                <div class="left">
+                    <div class="brand-logo">
+                        <img src="SDFC1.jpg "
+                            alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>SDFC BANK</h1>
+                    <h2>EXTRAORDINARY SERVICES</h2>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="reg.html">New Account</a></li>
+                    <li><a href="bal.html">Balance</a></li>
+                    <li><a href="dep.html">Deposite</a></li>
+                    <li><a href="wit.html">Withdraw</a></li>
+                    <li><a href="trans.html">Transfer</a></li>
+                    <li><a href="clos.html">Close Account</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="app-body">
+            <div class="sdfc-body">
+                <div class="adds"><marquee behavior="scroll" direction="down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi tenetur recusandae
+                    consequatur iure aliquid quibusdam corporis natus repellendus nulla reprehenderit labore illo ipsam,
+                    eveniet nihil consectetur iusto magni officiis temporibus? Nisi ut dicta neque officiis, doloribus
+                    debitis nesciunt rem animi? Eos, facere aut quidem incidunt a excepturi saepe corrupti veniam
+                    nesciunt perferendis vero delectus neque iusto aliquid nulla repellendus, nihil culpa iste quam
+                    voluptatum maiores nemo. Dolor reiciendis eum recusandae impedit totam adipisci atque veritatis nam
+                    assumenda illo dignissimos laborum iste, provident veniam sequi ea tempore ipsam pariatur, voluptas
+                    exercitationem.</marquee></div>
+                <form class="form">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h1>LOGIN</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ac">
+                                    <h2>A/C Number</h2>
+                                </label></td>
+                            <td> <input id="ac" type="number" placeholder="A/C Number"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="psw">
+                                    <h2>Password</h2>
+                                </label></td>
+                            <td><input type="password" id="psw" placeholder="Password"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="submit-btn"><input type="submit"></td>
+                        </tr>
+                    </table>
+
+                </form>
+                <div class="adds"><marquee behavior="scroll" direction="up">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi tenetur recusandae
+                    consequatur iure aliquid quibusdam corporis natus repellendus nulla reprehenderit labore illo ipsam,
+                    eveniet nihil consectetur iusto magni officiis temporibus? Nisi ut dicta neque officiis, doloribus
+                    debitis nesciunt rem animi? Eos, facere aut quidem incidunt a excepturi saepe corrupti veniam
+                    nesciunt perferendis vero delectus neque iusto aliquid nulla repellendus, nihil culpa iste quam
+                    voluptatum maiores nemo. Dolor reiciendis eum recusandae impedit totam adipisci atque veritatis nam
+                    assumenda illo dignissimos laborum iste, provident veniam sequi ea tempore ipsam pariatur, voluptas
+                    exercitationem.</marquee></div>
+            </div>
+
+
+        </section>
+        <!-- <footer>
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam expedita modi eaque, totam neque qui
+                odio ea aut alias, maiores voluptate cumque facere fugiat! Ratione fugiat, hic alias impedit aspernatur
+                voluptates nihil tempora necessitatibus, cumque reprehenderit harum tempore in debitis neque numquam cum
+                ab blanditiis dolores iusto mollitia asperiores itaque?</h1>
+        </footer> -->
+    </main>
+</body>
+
+</html>
